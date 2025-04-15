@@ -5,19 +5,19 @@
 
 <!doctype html>
 <html lang="en">
-@Html.Partial("partialHead", "AdminLayout")
+@Html.Partial("/Views/AdminLayout/partialHead.cshtml")
 
 <body>
 	
 	<div class="wrapper d-flex align-items-stretch">
-			
-			@Html.Partial("partialSidebar")
+
+		@Html.Partial("/Views/AdminLayout/partialSidebar.cshtml")
 		
 		<div id="content" class="p-4 p-md-5 pt-5">
 			@RenderBody()
 		</div>
 	</div>
-	@Html.Partial("partialScript")
+	@Html.Partial("/Views/AdminLayout/partialScript.cshtml")
 	
 </body>
 </html>
