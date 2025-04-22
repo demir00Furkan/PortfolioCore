@@ -7,7 +7,7 @@ namespace PortfolioCore.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=FURKAN\\SQLEXPRESS;initial Catalog=PortfolioNightDb; integrated security=true;trust server certificate=true;");
+            optionsBuilder.UseSqlServer("Server=FURKAN;initial Catalog=PortfolioNightDb; integrated security=true;trust server certificate=true;");
         }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Education> Educations { get; set; }
@@ -15,5 +15,7 @@ namespace PortfolioCore.Context
         public DbSet<Message> Messages { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Portfolio> Portfolios { get; set; }
     }
 }

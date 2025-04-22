@@ -22,7 +22,7 @@ namespace PortfolioCore.Controllers
         {
             context.Experiences.Add(experience);
             context.SaveChanges();
-            return RedirectToAction("ExperienceListAction");
+            return RedirectToAction("ExperienceList");
         }
         public IActionResult DeleteExperience(int id)
         {

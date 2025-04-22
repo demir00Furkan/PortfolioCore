@@ -2,7 +2,7 @@
 
 namespace PortfolioCore.Controllers
 {
-    public class TestController : Controller
+    public class DefaultController : Controller
     {
         public IActionResult Index()
         {
