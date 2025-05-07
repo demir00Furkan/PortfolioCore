@@ -17,6 +17,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseStatusCodePagesWithReExecute("/NotFound/NotFoundPage");
+
+
 
 app.UseAuthorization();
 

@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_DefaultHeadComponentPartial")
+
+
+<body class="index-page">
+
+    @await Component.InvokeAsync("_DefaultSidebarComponentPartial")
+
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <h3 class="sitename">404 Not Found</h3>
+            <p>Aradığınız sayfayı bulamadık lütfen url'yi kontrol ediniz.</p>
+            <div class="social-links d-flex justify-content-center">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-skype"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <span>Copyright</span> <strong class="px-1 sitename">Yusuf Furkan Demir</strong> <span>All Rights Reserved</span>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    @await Component.InvokeAsync("_DefaultScriptComponentPartial")
+
+</body>
+
+</html>

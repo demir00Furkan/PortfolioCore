@@ -13,7 +13,7 @@ namespace PortfolioCore.Controllers
             return View(values);
         }
         [HttpGet]
-        public IActionResult createExperience()
+        public IActionResult CreateExperience()
         {
             return View();
         }
@@ -39,9 +39,9 @@ namespace PortfolioCore.Controllers
             
         }
         [HttpPost]
-        public IActionResult UpdateExperience(Experience x)
+        public IActionResult UpdateExperience(Experience experience)
         {
-            context.Experiences.Update(x);
+            context.Experiences.Update(experience);
             context.SaveChanges();
             return RedirectToAction("ExperienceList");
         }

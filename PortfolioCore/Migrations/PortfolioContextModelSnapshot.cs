@@ -252,6 +252,31 @@ namespace PortfolioCore.Migrations
                     b.ToTable("Portfolios");
                 });
 
+            modelBuilder.Entity("PortfolioCore.Entities.Services", b =>
+                {
+                    b.Property<int>("ServicesId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ServicesId"));
+
+                    b.Property<string>("ServicesDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ServicesIconUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ServicesTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ServicesId");
+
+                    b.ToTable("Servicess");
+                });
+
             modelBuilder.Entity("PortfolioCore.Entities.Skill", b =>
                 {
                     b.Property<int>("SkillId")
