@@ -105,7 +105,7 @@ Teknik: Hizmet başlıkları ve açıklamaları veritabanında tutulur, frontend
 ### 📥 Gelen Mesajlar
 - Ziyaretçi mesajları tablo halinde listelenir.
 - “Okundu/Okunmadı”, “Sil”, “Cevap Ver” işlemleri.
-![mesajlar](https://github.com/user-attachments/assets/122a96e5-4302-448e-a7ed-bdeb9741ecec)
+![mesajlar](https://github.com/user-attachments/assets/7fa36026-9744-475e-a880-4b1bafd3b455)
 
 ### 📊 İstatistikler & Dashboard
 - Bu bölümde yetenekler, deneyimler ve diğer özet istatistikler dashboard’da gösterilir.
